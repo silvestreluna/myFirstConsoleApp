@@ -7,44 +7,16 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            bool myBool = true;
-            int myIntValue;
-            myIntValue = 1234;
+            Console.WriteLine("Please enter a list of numbers...");
+            var input = Console.ReadLine();
 
+            var inputString = input.Split(",");
 
-            if (myBool)
-            {
-                Console.WriteLine("We'll never hit this code.");
-            }
+            Console.WriteLine(inputString[0]);
 
-            switch (myIntValue)
-            {
-                case 1:
-                    Console.WriteLine("one");
-                    break;
-                default:
-                    Console.WriteLine("something");
-                    break;
-            }
+            Console.WriteLine(input);
 
-            for (var i = 0; i < 5; i++)
-            {
-                Console.WriteLine($"number is {i}");
-            }
-
-            List<string> myString = new List<string>();
-            myString.Add("heelo");
-            myString.Add("hello2");
-            myString.Insert(1,"hellinsert");
-
-            foreach (var myStrings in myString)
-            {
-                Console.WriteLine(myStrings);
-            }
-
-
-
-            Console.WriteLine("Hello World!");
+            Console.ReadLine();
         }
     }
 }
